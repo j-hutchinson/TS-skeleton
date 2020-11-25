@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TS App",
+  "name": "TS scaffolding",
   "icons": [
     {
       "src": "favicon.ico",
