@@ -1,11 +1,8 @@
 {
-  "name": "typescript-scaffolding",
+  "name": "ts-skeleton",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.5",
-    "@testing-library/react": "^11.1.1",
-    "@testing-library/user-event": "^12.2.0",
     "@types/enzyme": "^3.10.6",
     "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/enzyme-to-json": "^1.5.3",
@@ -13,34 +10,26 @@
     "@types/node": "14.6.4",
     "@types/react": "^16.9.49",
     "@types/react-dom": "16.9.1",
-    "@types/react-redux": "^7.1.9",
     "@types/styled-components": "^5.1.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4",
     "enzyme-to-json": "^3.5.0",
     "jest-styled-components": "^7.0.3",
-    "prettier": "^2.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.0",
+    "react-scripts": "4.0.3",
     "styled-components": "5.2.0",
-    "typescript": "^4.0.5"
+    "typescript": "^4.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
-  },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
     ]
   },
   "browserslist": {
@@ -55,13 +44,18 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "prettier": {
     "printWidth": 95,
     "tabWidth": 2,
     "useTabs": true,
     "semi": true,
     "singleQuote": true,
-    "trailingComma": "none",
+    "trailingComma": "es5",
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
     "fluid": false
