@@ -3,34 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/enzyme": "^3.10.6",
-    "@types/enzyme-adapter-react-16": "^1.0.3",
-    "@types/enzyme-to-json": "^1.5.3",
+    "@testing-library/react": "^13.3.0",
     "@types/jest": "^26.0.13",
-    "@types/node": "14.6.4",
-    "@types/react": "^16.9.49",
-    "@types/react-dom": "16.9.1",
+    "@types/node": "17.0.4",
+    "@types/react": "^18.0.11",
+    "@types/react-dom": "18.0.5",
     "@types/styled-components": "^5.1.3",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.4",
-    "enzyme-to-json": "^3.5.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "jest-styled-components": "^7.0.3",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3",
-    "styled-components": "5.2.0",
-    "typescript": "^4.2.3"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "5.3.5",
+    "typescript": "^4.7.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -44,11 +41,6 @@
       "last 1 safari version"
     ]
   },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
   "prettier": {
     "printWidth": 95,
     "tabWidth": 2,
@@ -59,5 +51,8 @@
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
     "fluid": false
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4"
   }
 }

@@ -1,10 +1,8 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import { render, screen } from '@testing-library/react';
 import App from './component';
 
-describe('App', () => {
-  test('component renders correctly', () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper).toMatchSnapshot();
-  });
-})
+test('renders hello world text', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/hello world/i)
+  expect(linkElement).toBeInTheDocument();
+});
